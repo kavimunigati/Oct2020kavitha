@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Test automtion regression suite" parallel="tests" thread-count="3" verbose="3">
+
+
+	<test name="KholsTest">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="TestNgSessions.KholsTest" >
+			
+			</class>
+		</classes>
+	</test>
+				
+
+
+	<test name="GoogleTest">
+		<parameter name="browser" value="Firefox" />
+		<classes>
+			<class name="TestNgSessions.GoogleTest" />
+			<!-- <methods> 
+				<include name="googleTitleTest" /> 
+				<include name="googleLogoTest" />
+				<exclude name="googleSearchButtonTest" /> 
+					</methods> -->
+			
+		</classes>
+	</test>
+</suite>
